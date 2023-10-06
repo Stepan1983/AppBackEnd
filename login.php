@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'exp' => time() + 3600 // Токен действителен 1 час (3600 секунд)
         ];
 
-        $secretKey = 'your-secret-key'; // Замените это на ваш секретный ключ
+        $secretKey = 'GVrmmhegUpeihqu'; // Замените это на ваш секретный ключ
         $algorithm = 'HS256'; // Выберите подходящий алгоритм подписи
 
         $token = JWT::encode($tokenPayload, $secretKey, $algorithm);
